@@ -1,0 +1,391 @@
+/* ========== RESET & DASAR LAYOUT ========== */
+/* Reset kecil agar tampilan lebih konsisten antar browser */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Styling dasar body */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #0f172a; /* biru tua */
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* Batasi lebar konten & pusatkan */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 3rem;
+}
+
+/* ========== HEADER & NAV ========== */
+/* Header utama situs */
+.site-header {
+  background: #020617;
+  border-bottom: 1px solid #1f2937;
+  padding: 1rem 1.5rem;
+}
+
+/* Wrapper untuk logo/judul */
+.logo-wrapper {
+  max-width: 960px;
+  margin: 0 auto 0.5rem;
+}
+
+/* H1 judul utama */
+#site-title {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+/* Tagline kecil di bawah judul */
+.tagline {
+  margin: 0.25rem 0 0;
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+
+/* Navigasi utama */
+.main-nav {
+  border-top: 1px solid #1f2937;
+  margin-top: 0.75rem;
+}
+
+.main-nav ul {
+  max-width: 960px;
+  margin: 0.5rem auto 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #38bdf8;
+  font-size: 0.9rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+
+/* Efek hover & focus untuk link nav */
+.main-nav a:hover {
+  background: #0ea5e9;
+  color: #0b1120;
+}
+
+.main-nav a:focus {
+  outline: 2px solid #f97316;
+  outline-offset: 2px;
+}
+
+/* ========== SECTION UMUM ========== */
+/* Section umum diberi margin atas dan bawah */
+.section {
+  margin-top: 2rem;
+}
+
+/* Judul section h2 */
+.section > h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+/* ========== TENTANG SAYA & ASIDE ========== */
+/* Layout dua kolom untuk about + aside (di desktop) */
+.about-section {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 1.5rem;
+}
+
+/* Artikel tentang saya */
+.about-article {
+  background: #020617;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  border: 1px solid #1f2937;
+}
+
+/* Foto profil */
+.profile-photo {
+  width: 130px;
+  height: 130px;
+  border-radius: 999px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+/* Teks last update */
+.last-update {
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+/* Aside highlight */
+.side-highlight {
+  background: #020617;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  border: 1px solid #1f2937;
+  font-size: 0.9rem;
+}
+
+.side-highlight h3 {
+  margin-top: 0;
+}
+
+/* ========== TABEL RIWAYAT ========== */
+.timeline-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #020617;
+  border-radius: 1rem;
+  overflow: hidden; /* agar radius terlihat untuk tabel */
+  font-size: 0.95rem;
+}
+
+/* Caption tabel */
+.timeline-table caption {
+  caption-side: top;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  text-align: left;
+  background: #020617;
+}
+
+/* Header tabel */
+.timeline-table thead {
+  background: #111827;
+}
+
+.timeline-table th,
+.timeline-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #1f2937;
+  vertical-align: top;
+}
+
+/* Tfoot dengan gaya sedikit berbeda */
+.timeline-table tfoot td {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  background: #020617;
+}
+
+/* ========== KEAHLIAN ========== */
+.skills-wrapper {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.5rem;
+}
+
+/* Card keahlian */
+.skill-list,
+.skill-description {
+  background: #020617;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  border: 1px solid #1f2937;
+  font-size: 0.95rem;
+}
+
+.skill-list h3,
+.skill-description h3 {
+  margin-top: 0;
+}
+
+/* Agar UL tidak terlalu mepet */
+.skill-list ul {
+  padding-left: 1.25rem;
+}
+
+/* Description list */
+.skill-description dl {
+  margin: 0;
+}
+
+.skill-description dt {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.skill-description dd {
+  margin-left: 0;
+  margin-bottom: 0.25rem;
+}
+
+/* ========== PROJEK ========== */
+/* Card projek */
+.project-card {
+  background: #020617;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  border: 1px solid #1f2937;
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 2fr);
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  align-items: center;
+}
+
+/* Thumbnail projek */
+.project-thumb {
+  width: 100%;
+  border-radius: 0.75rem;
+  object-fit: cover;
+}
+
+/* Konten teks projek */
+.project-content h3 {
+  margin-top: 0;
+}
+
+/* Link projek */
+.project-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  text-decoration: none;
+  background: #22c55e;
+  color: #022c22;
+  font-size: 0.9rem;
+}
+
+.project-link:hover {
+  background: #16a34a;
+}
+
+/* Wrapper iframe media */
+.media-wrapper iframe {
+  width: 100%;
+  min-height: 200px;
+  border-radius: 0.75rem;
+  border: none;
+}
+
+/* ========== FORM KONTAK ========== */
+/* Form kontak card */
+.contact-form {
+  background: #020617;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  border: 1px solid #1f2937;
+  font-size: 0.95rem;
+}
+
+/* Group field */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* Label di atas input */
+.form-group label {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+/* Input dan textarea */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #4b5563;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+/* Textarea lebih tinggi */
+.contact-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Hint / deskripsi kecil */
+.hint-text {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  margin: 0.25rem 0 0;
+}
+
+/* Checkbox label */
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+/* Fieldset untuk radio */
+fieldset {
+  border: 1px solid #4b5563;
+  border-radius: 0.75rem;
+  padding: 0.75rem 0.9rem 0.9rem;
+}
+
+legend {
+  padding: 0 0.3rem;
+}
+
+/* Group radio */
+.radio-group {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Tombol submit */
+.btn-submit {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: #4f46e5;
+  color: #e5e7eb;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Hover & focus untuk tombol */
+.btn-submit:hover {
+  background: #4338ca;
+}
+
+.btn-submit:focus {
+  outline: 2px solid #f97316;
+  outline-offset: 2px;
+}
+
+/* ========== FOOTER ========== */
+.site-footer {
+  border-top: 1px solid #1f2937;
+  padding: 1rem 1.5rem 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+/* ========== RESPONSIVE (LAYOUT HP) ========== */
+/* Jika layar kecil, ubah grid jadi satu kolom */
+@media (max-width: 768px) {
+  .about-section,
+  .skills-wrapper,
+  .project-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
