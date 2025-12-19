@@ -42,10 +42,16 @@
         <li><a href="#projek">Projek</a></li>
         <li><a href="#kontak">Kontak</a></li>
         <li><a href="lat_css.html">Kumpulan Tugas</a></li>
+        </div>
+        <li>
+        
       </ul>
     </nav>
   </header>
-
+  <picture>
+    <source media="(min-width: )" srcset="">
+    <img src="" alt="">
+  </picture>
   <!-- (1) MAIN: konten utama halaman -->
   <main id="main-content" aria-labelledby="site-title">
     <!-- (2) SECTION TENTANG SAYA + ASIDE -->
@@ -63,7 +69,7 @@
 
         <!-- (2) Gambar dengan alt text yang meaningful -->
         <img
-          src="foto 1.jpg"
+          src="images/foto 1.jpg"
           alt="Foto M Dwi Arsyad Siddiq tersenyum mengenakan kemeja rapi"
           class="profile-photo"
         />
@@ -361,10 +367,17 @@
     </p>
   </footer>
 </body>
+<script>
+   function toggleDropdown() {
+    document.getElementById("mydropdown").classList.toggle("show");
+   }
+window.addEventListener("click",function (e){
+
+  if (!e.target.closest("dropdown")) {
+    document.getElementById("myDropdown").classList.remove("show");
+  }
+});
+
+
+</script>
 </html>
-
-
-
-
-
-
