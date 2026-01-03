@@ -1,0 +1,139 @@
+/* ============================= */
+/* RESET & DASAR */
+/* ============================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+/* ============================= */
+/* JUDUL HALAMAN */
+/* ============================= */
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #38bdf8;
+}
+
+/* ============================= */
+/* CARD DOCUMENT */
+/* ============================= */
+.document {
+  max-width: 500px;
+  margin: 0 auto 2.5rem;
+  background: #020617;
+  border: 1px solid #1f2937;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.document:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.document h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+/* ============================= */
+/* BUTTON */
+/* ============================= */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #4f46e5;
+  color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: 
+    background-color 0.25s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  background: #4338ca;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.45);
+}
+
+/* ============================= */
+/* LIST TUGAS */
+/* ============================= */
+.list {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #020617;
+  border: 1px solid #1f2937;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.list ul {
+  list-style: none;
+}
+
+.list li + li {
+  margin-top: 0.75rem;
+}
+
+/* ============================= */
+/* LINK TUGAS */
+/* ============================= */
+.list a {
+  display: block;
+  text-decoration: none;
+  color: #38bdf8;
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.75rem;
+  border: 1px solid transparent;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.2s ease,
+    border-color 0.25s ease;
+}
+
+.list a:hover {
+  background: #0ea5e9;
+  color: #020617;
+  transform: translateX(6px);
+  border-color: #38bdf8;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .document,
+  .list {
+    padding: 1.2rem;
+  }
+}
+
+/* ============================= */
+/* AKSESIBILITAS */
+/* ============================= */
+a:focus {
+  outline: 2px solid #f97316;
+  outline-offset: 3px;
+}
