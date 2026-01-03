@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- ===== META DASAR ===== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Portofolio M Dwi Arsyad Siddiq, mahasiswa Informatika dengan fokus Web Development dan pemrograman."
+  />
+
+  <!-- ===== OPEN GRAPH ===== -->
+  <meta property="og:title" content="Portofolio - M Dwi Arsyad Siddiq" />
+  <meta property="og:description" content="Mahasiswa Informatika & calon Web Developer" />
+  <meta property="og:image" content="images/foto-profil-arsyad.jpg" />
+
+  <title>Portofolio | M Dwi Arsyad Siddiq</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="logo-wrapper">
+      <h1 id="site-title">Muhammad Dwi Arsyad Siddiq</h1>
+      <p class="tagline">
+        Mahasiswa <abbr title="Teknologi Informatika">TI</abbr> • Web Development Enthusiast
+      </p>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="main-nav" aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#riwayat">Riwayat</a></li>
+        <li><a href="#keahlian">Keahlian</a></li>
+        <li><a href="#projek">Projek</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+
+        <!-- DROPDOWN -->
+        <li class="dropdown">
+          <button class="dropbtn" onclick="toggleDropdown()" aria-haspopup="true">
+            Projek Tugas ▼
+          </button>
+          <div class="dropdown-content" id="mydropdown">
+            <a href="Kumpulan Tugas/Tugas 10/pertemuan10.html">Pertemuan 10</a>
+            <a href="Kumpulan Tugas/Tugas 11/pertemuan11.html">Pertemuan 11</a>
+            <a href="Kumpulan Tugas/Tugas 12/pertemuan 12.html">Pertemuan 12</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main id="main-content">
+
+    <!-- ===== TENTANG SAYA ===== -->
+    <section id="tentang" class="section about-section">
+      <article class="about-article">
+        <h2>Tentang Saya</h2>
+
+        <img
+          src="foto 1.jpg"
+          alt="Foto M Dwi Arsyad Siddiq"
+          class="profile-photo"
+        />
+
+        <p>
+          Saya <strong>Arsyad</strong>, mahasiswa Informatika yang tertarik pada
+          <strong>Web Development</strong>, desain antarmuka, dan pemrograman dasar.
+          Saya senang membangun projek kecil untuk melatih logika, struktur HTML
+          semantik, dan pengalaman pengguna.
+        </p>
+
+        <p class="last-update">
+          Terakhir diperbarui:
+          <time datetime="2025-11-21">21 November 2025</time>
+        </p>
+      </article>
+
+      <aside class="side-highlight">
+        <h3>Highlight</h3>
+        <ul>
+          <li>Belajar Web Development & Python</li>
+          <li>Mahasiswa Informatika</li>
+          <li>Tertarik UI/UX minimalis</li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- ===== RIWAYAT ===== -->
+    <section id="riwayat" class="section">
+      <h2>Riwayat Pendidikan & Pengalaman</h2>
+
+      <table class="timeline-table">
+        <caption>Pendidikan formal dan pengalaman organisasi</caption>
+        <thead>
+          <tr>
+            <th>Periode</th>
+            <th>Institusi</th>
+            <th>Peran</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2022 – 2025</td>
+            <td>MA Persis 7 Cempakawarna</td>
+            <td>Siswa IPA & OSIS</td>
+          </tr>
+          <tr>
+            <td>2025 – Sekarang</td>
+            <td>Universitas Mayasari Bakti</td>
+            <td>Mahasiswa Informatika</td>
+          </tr>
+          <tr>
+            <td>2025</td>
+            <td>HIMA Persis PK UMB</td>
+            <td>Anggota</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ===== KEAHLIAN ===== -->
+    <section id="keahlian" class="section">
+      <h2>Keahlian</h2>
+
+      <div class="skills-wrapper">
+        <div class="skill-list">
+          <h3>Teknis</h3>
+          <ul>
+            <li>HTML Semantik & Aksesibilitas</li>
+            <li>CSS (Flexbox & Grid)</li>
+            <li>JavaScript Dasar</li>
+            <li>Python Dasar</li>
+          </ul>
+        </div>
+
+        <div class="skill-description">
+          <h3>Fokus</h3>
+          <dl>
+            <dt>Front-End</dt>
+            <dd>Layout responsif & UI bersih</dd>
+
+            <dt>Problem Solving</dt>
+            <dd>Logika & struktur kode</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJEK ===== -->
+    <section id="projek" class="section">
+      <h2>Projek Terpilih</h2>
+
+      <article class="project-card">
+        <img
+          src="images/project-form.jpg"
+          alt="Projek Form HTML"
+          class="project-thumb"
+        />
+        <div class="project-content">
+          <h3>Form HTML Responsif</h3>
+          <p>Form validasi HTML5 dengan struktur semantik.</p>
+          <a href="#" class="project-link">Lihat Projek</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-content">
+          <h3>Media Player Sederhana</h3>
+          <p>Pemutar audio & video berbasis HTML5.</p>
+          <a href="#" class="project-link">Lihat Projek</a>
+        </div>
+
+        <div class="media-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Demo Media Player"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===== KONTAK ===== -->
+    <section id="kontak" class="section">
+      <h2>Kontak</h2>
+
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Kirim Pesan</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <p>&copy; 2025 M Dwi Arsyad Siddiq</p>
+    <p>Dibuat dengan semangat belajar ☕</p>
+  </footer>
+
+  <!-- ================= SCRIPT ================= -->
+  <script>
+    function toggleDropdown() {
+      document.getElementById("mydropdown").classList.toggle("show");
+    }
+
+    window.addEventListener("click", function (e) {
+      if (!e.target.closest(".dropdown")) {
+        document.getElementById("mydropdown").classList.remove("show");
+      }
+    });
+  </script>
+</body>
+</html>
